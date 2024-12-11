@@ -27,8 +27,8 @@ Noise is added to the dataset with a noise factor to test how the model handles 
 ### STEP 4:
 Design the model.
 ## PROGRAM
-### Name:M.Pranathi
-### Register Number:212222240064
+### Name:sreeja
+### Register Number:212222230169
 ### Import necessary libraries
 ```
 from tensorflow import keras
@@ -86,7 +86,7 @@ x = layers.Conv2D(16, (3, 3), activation='relu')(x)
 x = layers.UpSampling2D((2, 2))(x)
 decoded = layers.Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 autoencoder = keras.Model(input_img, decoded)
-print('Name: M.Pranathi        Register Number: 212222240064       ')
+print('Name: sreeja       Register Number: 212222230169       ')
 autoencoder.summary()
 ```
 ### Compiling and Fitting the model
